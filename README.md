@@ -20,7 +20,7 @@ The examples that are currently available include:
   Server](https://nawilson.com/2019/01/29/programmatically-retrieving-password-quality-requirements-in-the-ping-identity-directory-server/)
   blog post for more information.
 
-* [ldap-join-example](ldap-join-example) — A sample program that demonstrates
+* [ldap-join](ldap-join) — A sample program that demonstrates
   the use of the LDAP join control in the Ping Identity Directory Server and
   the UnboundID LDAP SDK for Java. It issues a search request to retrieve a
   user from the directory, where that search request includes a join request
