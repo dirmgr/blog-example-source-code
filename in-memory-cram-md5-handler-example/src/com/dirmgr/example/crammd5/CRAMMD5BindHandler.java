@@ -97,7 +97,9 @@ public final class CRAMMD5BindHandler
 
 
   /**
-   * {@inheritDoc}
+   * Retrieves the name of the SASL mechanism supported by this bind handler.
+   *
+   * @return  The name of the SASL mechanism supported by this bind handler.
    */
   @Override()
   public String getSASLMechanismName()
@@ -108,7 +110,30 @@ public final class CRAMMD5BindHandler
 
 
   /**
-   * {@inheritDoc}
+   * Performs the appropriate processing for a SASL bind request with the
+   * provided information.
+   * <BR><BR>
+   * If the bind processing is successful, then this method should also call
+   * {@link InMemoryRequestHandler#setAuthenticatedDN(DN)} on the provided
+   * request handler instance to set the identity of the authenticated user.
+   * <BR><BR>
+   * If the associated SASL mechanism requires multiple stages of processing
+   * and it is necessary to store and retrieve state information to use in other
+   * stages of the bind processing, then the map returned by the
+   * {@link InMemoryRequestHandler#getConnectionState()} method should be used
+   * for this purpose.
+   *
+   * @param  handler      The in-memory request handler that accepted the bind
+   *                      request.
+   * @param  messageID    The message ID for the LDAP message that the client
+   *                      used to send the request.
+   * @param  bindDN       The bind DN provided by the client.
+   * @param  credentials  The SASL credentials provided by the client, or
+   *                      {@code null} if there were none.
+   * @param  controls     The request controls provided by the client.
+   *
+   * @return  The result that should be returned to the client in response to
+   *          the provided request.
    */
   @Override()
   public BindResult processSASLBind(final InMemoryRequestHandler handler,
