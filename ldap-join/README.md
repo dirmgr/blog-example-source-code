@@ -1,4 +1,4 @@
-# ldap-join-example
+# LDAP Join Example
 
 This repository provides source code for a sample program that demonstrates the
 use of the LDAP join control in the Ping Identity Directory Server and the

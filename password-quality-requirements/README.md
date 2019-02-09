@@ -1,4 +1,4 @@
-# password-quality-requirements-example
+# Get Password Quality Requirements Example
 
 This repository provides source code for a sample program that can be used to
 change a user's password in the Ping Identity Directory Server.  It uses the
