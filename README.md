@@ -15,10 +15,15 @@ The examples that are currently available include:
 * [password-quality-requirements](password-quality-requirements) — A sample
   program that demonstrates how to use the get password quality extended
   operation and password validation details control in the Ping Identity
-  Directory Server. See the [Programmatically Retrieving Password Quality
-  Requirements in the Ping Identity Directory
-  Server](https://nawilson.com/2019/01/29/programmatically-retrieving-password-quality-requirements-in-the-ping-identity-directory-server/)
+  Directory Server and the UnboundID LDAP SDK for Java. See the
+  [Programmatically Retrieving Password Quality Requirements in the Ping
+  Identity DirectoryServer](https://nawilson.com/2019/01/29/programmatically-retrieving-password-quality-requirements-in-the-ping-identity-directory-server/)
   blog post for more information.
+
+* [password-policy-state-issues](password-policy-state-issues) — A sample
+  program that demonstrates the use of the get password policy state issues
+  control in the Ping Identity Directory Server and the UnboundID LDAP SDK for
+  Java.
 
 * [ldap-join](ldap-join) — A sample program that demonstrates
   the use of the LDAP join control in the Ping Identity Directory Server and
