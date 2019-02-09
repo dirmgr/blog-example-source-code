@@ -1,4 +1,4 @@
-# In-Memory Directory Server CRAM-MD% SASL Bind Handler
+# In-Memory Directory Server CRAM-MD5 SASL Bind Handler
 
 This repository provides source code for a sample InMemorySASLBindHandler for
 the UnboundID LDAP SDK for Java's in-memory directory server.  This SASL bind
