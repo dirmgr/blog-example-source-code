@@ -12,18 +12,13 @@ under the terms of each of the following licenses:
 
 The examples that are currently available include:
 
-* [password-quality-requirements](password-quality-requirements) — A sample
-  program that demonstrates how to use the get password quality extended
-  operation and password validation details control in the Ping Identity
-  Directory Server and the UnboundID LDAP SDK for Java. See the
-  [Programmatically Retrieving Password Quality Requirements in the Ping
-  Identity DirectoryServer](https://nawilson.com/2019/01/29/programmatically-retrieving-password-quality-requirements-in-the-ping-identity-directory-server/)
-  blog post for more information.
-
-* [password-policy-state-issues](password-policy-state-issues) — A sample
-  program that demonstrates the use of the get password policy state issues
-  control in the Ping Identity Directory Server and the UnboundID LDAP SDK for
-  Java.
+* [in-memory-cram-md5-handler-example](in-memory-cram-md5-handler-example) — An
+  example of a SASL bind handler for the in-memory directory server included as
+  part of the UnboundID LDAP SDK for Java. This example implements support for
+  the CRAM-MD5 SASL mechanism. It wasn’t really written for a blog post, but
+  rather as an illustration used to in answering a question asked on the
+  [LDAP SDK’s discussion forum on
+  SourceForge](https://sourceforge.net/p/ldap-sdk/discussion/1001257/thread/20bc11ee/).
 
 * [ldap-join](ldap-join) — A sample program that demonstrates
   the use of the LDAP join control in the Ping Identity Directory Server and
@@ -33,10 +28,21 @@ The examples that are currently available include:
   nested join that also uses a reverse DN join to retrieve the entries for the
   manager’s direct reports.
 
-* [in-memory-cram-md5-handler-example](in-memory-cram-md5-handler-example) — An
-  example of a SASL bind handler for the in-memory directory server included as
-  part of the UnboundID LDAP SDK for Java. This example implements support for
-  the CRAM-MD5 SASL mechanism. It wasn’t really written for a blog post, but
-  rather as an illustration used to in answering a question asked on the
-  [LDAP SDK’s discussion forum on
-  SourceForge](https://sourceforge.net/p/ldap-sdk/discussion/1001257/thread/20bc11ee/).
+* [multi-update](multi-update) — A sample program that demonstrates the use of
+  the multi-update extended operation in the Ping Identity Directory Server and
+  the UnboundID LDAP SDK for Java. It is basically a stripped-down version of
+  the ldapmodify tool, except it can only read changes from an LDIF file, and
+  all changes will be sent to the server in a multi-update operation.
+
+* [password-policy-state-issues](password-policy-state-issues) — A sample
+  program that demonstrates the use of the get password policy state issues
+  control in the Ping Identity Directory Server and the UnboundID LDAP SDK for
+  Java.
+
+* [password-quality-requirements](password-quality-requirements) — A sample
+  program that demonstrates how to use the get password quality extended
+  operation and password validation details control in the Ping Identity
+  Directory Server and the UnboundID LDAP SDK for Java. See the
+  [Programmatically Retrieving Password Quality Requirements in the Ping
+  Identity DirectoryServer](https://nawilson.com/2019/01/29/programmatically-retrieving-password-quality-requirements-in-the-ping-identity-directory-server/)
+  blog post for more information.
