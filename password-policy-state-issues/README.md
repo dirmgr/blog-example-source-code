@@ -1,4 +1,4 @@
-# Get Password Quality Requirements Control Example
+# Get Password Policy State Issues Control Example
 
 This repository provides source code for a sample program that demonstrates the
 use of the get password policy state issues control in the Ping Identity
