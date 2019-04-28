@@ -26,7 +26,7 @@ The following is an example of the output provided by this program:
 
     The server presented the following certificate chain:
 
-         Subject: CN=naw-serval,O=Ping Identity Self-Signed Certificate
+         Subject: CN=ds.example.com,O=Ping Identity Self-Signed Certificate
          Valid From: Saturday, April 27, 2019 at 11:11:58 AM CDT
          Valid Until: Saturday, April 23, 2039 at 11:11:58 AM CDT
          SHA-1 Fingerprint: 41:5f:72:4a:e0:d0:22:18:3e:59:90:6f:65:fc:fe:34:f1:39:84:68
@@ -41,10 +41,25 @@ The following is an example of the output provided by this program:
 
     The server root DSE advertises support for the name with entryUUID request control.
 
-    Successfully added the test entry, and its resulting DN was 'entryUUID=c651fdc8-cb48-4b8b-9869-04d4937dd909,ou=People,dc=example,dc=com'.
+    Sending add request:
+    dn: replaceWithEntryUUID=replaceWithEntryUUID,ou=People,dc=example,dc=com
+    control: 1.3.6.1.4.1.30221.2.5.44 true
+    changetype: add
+    objectClass: top
+    objectClass: person
+    objectClass: organizationalPerson
+    objectClass: inetOrgPerson
+    uid: test.user
+    givenName: Test
+    sn: User
+    cn: Test User
+    userPassword: testUserPassword
+
+
+    Successfully added the test entry, and its resulting DN was 'entryUUID=4869eea6-90bf-45bf-9fcb-eac096564bc8,ou=People,dc=example,dc=com'.
 
     Full content of the resulting entry:
-    dn: entryUUID=c651fdc8-cb48-4b8b-9869-04d4937dd909,ou=People,dc=example,dc=com
+    dn: entryUUID=4869eea6-90bf-45bf-9fcb-eac096564bc8,ou=People,dc=example,dc=com
     objectClass: top
     objectClass: person
     objectClass: organizationalPerson
@@ -52,13 +67,13 @@ The following is an example of the output provided by this program:
     sn: User
     cn: Test User
     givenName: Test
-    userPassword: {SSHA256}lootHdjLCkINy1cOBfVYRtW6a+UoUoPe1M+S71zRRWN/8M8LAcEqKw==
+    userPassword: {SSHA256}Zr1sHf97PP2P2wBTigctjmoyHX1n6lWmZ5uK9u10ITEMOMWY7qujLg==
     uid: test.user
-    createTimestamp: 20190428200312.505Z
-    pwdChangedTime: 20190428200312.505Z
+    createTimestamp: 20190428202551.941Z
+    pwdChangedTime: 20190428202551.941Z
     creatorsName: cn=Name With entryUUID Example,ou=Applications,dc=example,dc=com
-    modifyTimestamp: 20190428200312.505Z
+    modifyTimestamp: 20190428202551.941Z
     modifiersName: cn=Name With entryUUID Example,ou=Applications,dc=example,dc=com
-    entryUUID: c651fdc8-cb48-4b8b-9869-04d4937dd909
-    ds-entry-checksum: 4613614288
+    entryUUID: 4869eea6-90bf-45bf-9fcb-eac096564bc8
+    ds-entry-checksum: 4447480622
     subschemaSubentry: cn=schema

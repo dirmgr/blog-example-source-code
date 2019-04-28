@@ -91,7 +91,7 @@ public class AddEntryNamedWithUUID
       // get the actual DN for the resulting entry.
       System.out.println();
       final String actualDN = addEntryNamedWithEntryUUID(connection, new Entry(
-           "dn: cn=This Will Be Replaced With the entryUUID," +
+           "dn: replaceWithEntryUUID=replaceWithEntryUUID," +
                 "ou=People,dc=example,dc=com",
            "objectClass: top",
            "objectClass: person",
@@ -273,6 +273,10 @@ public class AddEntryNamedWithUUID
 
     final boolean isCritical = true;
     addRequest.addControl(new NameWithEntryUUIDRequestControl(isCritical));
+
+    System.out.println("Sending add request:");
+    System.out.println(addRequest.toLDIFString());
+    System.out.println();
 
     final LDAPResult addResult;
     try
