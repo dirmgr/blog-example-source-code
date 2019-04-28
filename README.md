@@ -26,18 +26,31 @@ The examples that are currently available include:
   user from the directory, where that search request includes a join request
   control that uses a DN join to retrieve entry for that user’s manager, and a
   nested join that also uses a reverse DN join to retrieve the entries for the
-  manager’s direct reports.
+  manager’s direct reports. See the [The LDAP Join Control in the Ping Identity
+  Directory Server](https://nawilson.com/2019/02/14/the-ldap-join-control-in-the-ping-identity-directory-server/)
+  blog post for more information.
 
 * [multi-update](multi-update) — A sample program that demonstrates the use of
   the multi-update extended operation in the Ping Identity Directory Server and
   the UnboundID LDAP SDK for Java. It is basically a stripped-down version of
   the ldapmodify tool, except it can only read changes from an LDIF file, and
-  all changes will be sent to the server in a multi-update operation.
+  all changes will be sent to the server in a multi-update operation. See the
+  [The Multi-Update Extended Operation in the Ping Identity Directory
+  Server](https://nawilson.com/2019/02/19/the-multi-update-extended-operation-in-the-ping-identity-directory-server/)
+  blog post for more information.
+
+* [name-with-entryuuid](name-with-entryuuid) — A sample program that
+  demonstrates the use of the name with entryUUID request control in the Ping
+  Identity Directory Server and the UnboundID LDAP SDK for Java. It includes
+  this control in an add request, and then uses the post-read response control
+  in the add result to determine the actual DN that was given to the entry.
 
 * [password-policy-state-issues](password-policy-state-issues) — A sample
   program that demonstrates the use of the get password policy state issues
   control in the Ping Identity Directory Server and the UnboundID LDAP SDK for
-  Java.
+  Java. See the [The Get Password Policy State Issues Control in the Ping
+  Identity Directory Server](https://nawilson.com/2019/02/11/the-get-password-policy-state-issues-control-in-the-ping-identity-directory-server/)
+  blog post for more information.
 
 * [password-quality-requirements](password-quality-requirements) — A sample
   program that demonstrates how to use the get password quality extended
